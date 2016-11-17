@@ -42,5 +42,5 @@ vnoremap <silent> <Plug>AgActionVisual :<C-U>call <SID>Ag(visualmode())<CR>
 nnoremap <silent> <Plug>AgAction       :set hlsearch<CR>:<C-U>set opfunc=<SID>Ag<CR>g@
 nnoremap <silent> <Plug>AgActionWord   :set hlsearch<CR>:<C-U>set opfunc=<SID>Ag<CR>g@iw
 
-vmap gag <Plug>AgActionVisual
-nmap gag <Plug>AgAction
+vmap <C-g> <Plug>AgActionVisual
+nmap <C-g>   <Plug>AgAction
