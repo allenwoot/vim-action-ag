@@ -30,8 +30,8 @@ function! s:Ag(mode) abort
   let escaped_for_ag = escape(escaped_for_ag, g:vim_action_ag_escape_chars)
 
   " execute Ag command
-  echo ":FzfAg " . escaped_for_ag
-  execute ":FzfAg " . escaped_for_ag
+  echo ":Ag " . escaped_for_ag
+  execute ":Ag " . escaped_for_ag
 
   " recover @@ register
   let @@ = reg_save
